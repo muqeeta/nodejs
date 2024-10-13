@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Endpoint to receive notifications
-app.post('/api/webhook', (req, res) => {
+app.post('/', (req, res) => {
     // Log the received notification
     console.log('Received notification:', req.body);
 
